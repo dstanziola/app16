@@ -26,11 +26,11 @@ class CompanyConfig:
     """
     
     # Valores por defecto de Copy Point S.A.
-    DEFAULT_NOMBRE = "Copy Point S.A."
+    DEFAULT_NOMBRE = "Completa los datos para tu empresa"
     DEFAULT_RUC = "888-888-8888"
-    DEFAULT_DIRECCION = "Las Lajas, Las Cumbres, Panamá"
+    DEFAULT_DIRECCION = "Jordanal, Capira, Panamá"
     DEFAULT_TELEFONO = "6666-6666"
-    DEFAULT_EMAIL = "copy.point@gmail.com"
+    DEFAULT_EMAIL = "tu_correo@gmail.com"
     DEFAULT_ITBMS_RATE = Decimal("7.00")
     DEFAULT_MONEDA = "USD"
     

@@ -151,12 +151,6 @@ class CompanyConfigForm:
         self._create_validation_section(main_frame, row)
         row += 2
         
-        # Separador
-        # ttk.Separator(main_frame, orient='horizontal').grid(
-        #     row=row, column=0, columnspan=2, sticky=(tk.W, tk.E), pady=10
-        # )
-        # row += 1
-        
         # Botones de acción
         self._create_action_buttons(main_frame, row)
         
@@ -378,13 +372,6 @@ class CompanyConfigForm:
         
         # Separador
         ttk.Separator(button_frame, orient='vertical').pack(side=tk.LEFT, fill=tk.Y, padx=10)
-        
-        # Botones de importar/exportar
-        # ttk.Button(button_frame, text="Exportar...", 
-        #           command=self._export_config).pack(side=tk.LEFT, padx=5)
-        
-        # ttk.Button(button_frame, text="Importar...", 
-        #          command=self._import_config).pack(side=tk.LEFT, padx=5)
         
         # Botón cerrar
         ttk.Button(button_frame, text="Cerrar", 

@@ -73,7 +73,7 @@ class MainWindow:
         
         # Crear ventana principal
         self.root = tk.Tk()
-        self.root.title("Sistema de Gestión de Inventario - Copy Point S.A.")
+        self.root.title("Sistema de Gestión de Inventario - Copy Point")
         self.root.geometry("1024x768")
         self.root.minsize(800, 600)
         
@@ -312,15 +312,6 @@ class MainWindow:
         )
         welcome_title.pack(pady=(0, 10))
         
-        # Información de la empresa
-        # info_label = ttk.Label(
-        #     welcome_frame,
-        #     text="Copy Point S.A.\nSistema de Gestión de Inventario v1.1\nLas Lajas, Las Cumbres, Panamá\nTeléfono: 6342-9218\ne-mail: tus_amigos@copypoint.online",
-        #     font=("Arial", 12),
-        #     justify=tk.CENTER
-        # )
-        # info_label.pack(pady=(0, 20))
-        
         # Información de la empresa (dinámica)
         config = self.container.get('company_service').obtener_configuracion()
         company_text = (
@@ -337,9 +328,6 @@ class MainWindow:
             justify=tk.CENTER
         )
         self.company_info_label.pack(pady=(0, 20))
-
-
-
 
         # Información de usuario
         user_info = self.session_manager.get_user_info()
